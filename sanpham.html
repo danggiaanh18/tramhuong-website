@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm - Trầm Hương Đặng Gia Kỳ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🌿 Trầm Hương Đặng Gia Kỳ</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Trang chủ</a>
+                <a href="sanpham.html" class="active">Sản phẩm</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Danh Mục Sản Phẩm</h1>
+            <p>Trầm hương tự nhiên cao cấp - Chọn danh mục bên dưới</p>
+        </div>
+    </section>
+
+    <!-- TABS NAVIGATION -->
+    <section class="tabs-section">
+        <div class="container">
+            
+            <!-- NÚT TABS CHÍNH -->
+            <div class="tabs-nav">
+                <button class="tab-button active" onclick="openTab(event, 'vong-tram')">
+                    🔮 Vòng Trầm Hương
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'xong-dot')">
+                    🔥 Xông Đốt
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'tinh-dau')">
+                    💧 Tinh Dầu Trầm
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'dau-gio')">
+                    🌬️ Dầu Gió Trầm
+                </button>
+            </div>
+
+            <!-- ============================================ -->
+            <!-- TAB 1: VÒNG TRẦM HƯƠNG -->
+            <!-- ============================================ -->
+            <div id="vong-tram" class="tab-content active">
+                <div class="tab-header">
+                    <h2>🔮 Vòng Trầm Hương</h2>
+                    <p>Vòng tay trầm hương nguyên chất, mang lại may mắn và bình an</p>
+                </div>
+
+                <!-- SUB-TABS CHO VÒNG TRẦM -->
+                <div class="sub-tabs-nav">
+                    <button class="sub-tab-button active" onclick="openSubTab(event, 'vong-108', 'vong-tram')">
+                        📿 Vòng 108 Hạt
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'vong-don', 'vong-tram')">
+                        💍 Vòng Đơn
+                    </button>
+                </div>
+
+                <!-- SUB-TAB: Vòng 108 Hạt -->
+                <div id="vong-108" class="sub-tab-content active">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Bán chạy</div>
+                            <img src="images/vong-108.jpg" alt="Vòng Trầm 108 Hạt">
+                            <h3>Vòng Trầm 108 Hạt</h3>
+                            <p class="price">2.800.000đ</p>
+                            <p class="description">
+                                Vòng tay trầm hương 108 hạt, size 8mm, phù hợp đeo tay 
+                                hoặc làm chuỗi niệm Phật. Mùi hương thơm nhẹ, thanh tao.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1G7B59g1Wd/?mibextid=wwXIfr" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-TAB: Vòng Đơn -->
+                <div id="vong-don" class="sub-tab-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="images/vong-don.jpg" alt="Vòng Trầm Đơn">
+                            <h3>Vòng Trầm Đơn</h3>
+                            <p class="price">1.500.000đ</p>
+                            <p class="description">
+                                Vòng tay trầm hương đơn giản, thanh lịch, 
+                                phù hợp cho cả nam và nữ.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================ -->
+            <!-- TAB 2: XÔNG ĐỐT (BAO GỒM NHANG TRẦM) -->
+            <!-- ============================================ -->
+            <div id="xong-dot" class="tab-content">
+                <div class="tab-header">
+                    <h2>🔥 Xông Đốt</h2>
+                    <p>Trầm hương xông đốt cao cấp, mùi hương thơm ngát, thanh tịnh tâm hồn</p>
+                </div>
+
+                <!-- SUB-TABS CHO XÔNG ĐỐT (THÊM NHANG TRẦM) -->
+                <div class="sub-tabs-nav">
+                    <button class="sub-tab-button active" onclick="openSubTab(event, 'nu-loai-1', 'xong-dot')">
+                        ⭐ Nụ thượng hạng
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'nu-pho-thong', 'xong-dot')">
+                        🌟 Nụ Phổ Thông
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'nu-vip', 'xong-dot')">
+                        💎 Nụ VIP
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'van-may', 'xong-dot')">
+                        🍀 Vân Mây
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'nhang-tram', 'xong-dot')">
+                        🕯️ Nhang Trầm
+                    </button>
+                </div>
+
+                <!-- SUB-TAB: Nụ Loại 1 -->
+                <div id="nu-loai-1" class="sub-tab-content active">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Phổ biến</div>
+                            <img src="images/nụ-thượng-hạng.jpg" alt="Nụ Trầm Loại 1">
+                            <h3>Nụ Trầm Loại 1</h3>
+                            <p class="price">800.000đ / 100g</p>
+                            <p class="description">
+                                Nụ trầm hương loại 1, chất lượng cao, mùi hương thơm đậm đà, 
+                                thích hợp xông phòng, thờ cúng.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-TAB: Nụ Phổ Thông -->
+                <div id="nu-pho-thong" class="sub-tab-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="images/nu-pho-thong.jpg" alt="Nụ Trầm Phổ Thông">
+                            <h3>Nụ Trầm Phổ Thông</h3>
+                            <p class="price">500.000đ / 100g</p>
+                            <p class="description">
+                                Nụ trầm hương phổ thông, giá cả phải chăng, 
+                                phù hợp sử dụng hàng ngày.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-TAB: Nụ VIP -->
+                <div id="nu-vip" class="sub-tab-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Cao cấp</div>
+                            <img src="images/nu-vip.jpg" alt="Nụ Trầm VIP">
+                            <h3>Nụ Trầm VIP</h3>
+                            <p class="price">1.500.000đ / 100g</p>
+                            <p class="description">
+                                Nụ trầm hương VIP, chất lượng đặc biệt, mùi hương nồng nàn, 
+                                dành cho khách hàng cao cấp.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-TAB: Vân Mây -->
+                <div id="van-may" class="sub-tab-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="images/van-may.jpg" alt="Trầm Vân Mây">
+                            <h3>Trầm Vân Mây</h3>
+                            <p class="price">1.200.000đ / 100g</p>
+                            <p class="description">
+                                Trầm hương vân mây, vân gỗ đẹp, mùi hương đặc trưng, 
+                                thích hợp làm quà tặng.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- SUB-TAB: NHANG TRẦM (MỚI THÊM) -->
+                <!-- ============================================ -->
+                <div id="nhang-tram" class="sub-tab-content">
+                    
+                    <!-- HEADER NHANG TRẦM -->
+                    <div style="text-align: center; margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%); border-radius: 15px; border: 2px solid #ffcc99;">
+                        <h3 style="color: #1e3a8a; font-size: 1.8rem; margin-bottom: 10px;">🕯️ Nhang Trầm Hương</h3>
+                        <p style="color: #666; font-size: 1rem;">Nhang trầm hương cao cấp, mùi hương thanh tịnh, thích hợp thờ cúng và xông phòng</p>
+                    </div>
+
+                    <!-- GRID SẢN PHẨM NHANG TRẦM -->
+                    <div class="product-grid">
+                        
+                        <!-- Nhang Cuốn Tay -->
+                        <div class="product-card">
+                            <div class="product-badge">Thủ công</div>
+                            <img src="images/nhang-cuon-tay.jpg" alt="Nhang Trầm Cuốn Tay">
+                            <h3>Nhang Trầm Cuốn Tay</h3>
+                            <p class="price">150.000đ / 100 cây</p>
+                            <p class="description">
+                                Nhang trầm hương cuốn tay thủ công, mùi hương tự nhiên, 
+                                không hóa chất, thích hợp thờ cúng và xông phòng.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Nhang Thẳng -->
+                        <div class="product-card">
+                            <img src="images/nhang-thang.jpg" alt="Nhang Trầm Thẳng">
+                            <h3>Nhang Trầm Thẳng</h3>
+                            <p class="price">200.000đ / 100 cây</p>
+                            <p class="description">
+                                Nhang trầm hương thẳng, đốt lâu, mùi hương lan tỏa đều, 
+                                thích hợp thờ cúng tổ tiên.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Nhang Tròn -->
+                        <div class="product-card">
+                            <div class="product-badge">Đặc biệt</div>
+                            <img src="images/nhang-vòng.jpg" alt="Nhang Trầm Tròn">
+                            <h3>Nhang Trầm Tròn</h3>
+                            <p class="price">250.000đ / 10 vòng</p>
+                            <p class="description">
+                                Nhang trầm hương tròn, đốt lâu (4-6 giờ/vòng), 
+                                mùi hương nhẹ nhàng, thích hợp xông phòng.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Nhang Tháp -->
+                        <div class="product-card">
+                            <div class="product-badge premium">VIP</div>
+                            <img src="images/nhang-thap.jpg" alt="Nhang Trầm Tháp">
+                            <h3>Nhang Trầm Tháp</h3>
+                            <p class="price">350.000đ / 10 cây</p>
+                            <p class="description">
+                                Nhang trầm hương tháp cao cấp, hình dáng đẹp mắt, 
+                                mùi hương nồng nàn, dành cho khách hàng cao cấp.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ============================================ -->
+            <!-- TAB 3: TINH DẦU TRẦM -->
+            <!-- ============================================ -->
+            <div id="tinh-dau" class="tab-content">
+                <div class="tab-header">
+                    <h2>💧 Tinh Dầu Trầm</h2>
+                    <p>Tinh dầu trầm hương nguyên chất, dùng xông phòng, massage, thư giãn</p>
+                </div>
+
+                <!-- SUB-TABS CHO TINH DẦU -->
+                <div class="sub-tabs-nav">
+                    <button class="sub-tab-button active" onclick="openSubTab(event, 'tinh-dau-10ml', 'tinh-dau')">
+                        💧 Tinh Dầu 10ml
+                    </button>
+                    <button class="sub-tab-button" onclick="openSubTab(event, 'tinh-dau-20ml', 'tinh-dau')">
+                        💧💧 Tinh Dầu 20ml
+                    </button>
+                </div>
+
+                <!-- SUB-TAB: Tinh Dầu 10ml -->
+                <div id="tinh-dau-10ml" class="sub-tab-content active">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="images/tinh-dầu-trầm.jpg" alt="Tinh Dầu Trầm 10ml">
+                            <h3>Tinh Dầu Trầm 10ml</h3>
+                            <p class="price">350.000đ</p>
+                            <p class="description">
+                                Tinh dầu trầm hương nguyên chất 10ml, 
+                                dùng xông phòng, massage, giúp thư giãn tinh thần.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUB-TAB: Tinh Dầu 20ml -->
+                <div id="tinh-dau-20ml" class="sub-tab-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Tiết kiệm</div>
+                            <img src="images/tinh-dau-20ml.jpg" alt="Tinh Dầu Trầm 20ml">
+                            <h3>Tinh Dầu Trầm 20ml</h3>
+                            <p class="price">650.000đ</p>
+                            <p class="description">
+                                Tinh dầu trầm hương nguyên chất 20ml, 
+                                dung tích lớn hơn, tiết kiệm hơn.
+                            </p>
+                            
+                            <div class="product-buttons-minimal">
+                                <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <span>Chat qua Facebook</span>
+                                </a>
+                                
+                                <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-line"></i>
+                                    </div>
+                                    <span>Chat qua LINE</span>
+                                </a>
+                                
+                                <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                    <div class="btn-minimal-icon">
+                                        <i class="fab fa-tiktok"></i>
+                                    </div>
+                                    <span>Xem trên TikTok</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================ -->
+            <!-- TAB 4: DẦU GIÓ TRẦM - LAYOUT NGANG 4 CỘT -->
+            <!-- ============================================ -->
+            <div id="dau-gio" class="tab-content">
+                
+                <!-- ========== PHẦN GIỚI THIỆU ========== -->
+                <div class="dau-gio-intro-section">
+                    <div class="container">
+                        
+                        <!-- HEADER -->
+                        <div class="dau-gio-intro-header">
+                            <h2>🌬️ Dầu Gió Trầm Hương - 天然沉香</h2>
+                            <p>Dầu gió trầm hương tự nhiên từ Đài Loan - An toàn, cao cấp</p>
+                        </div>
+
+                        <!-- 4 ẢNH NGANG -->
+                        <div class="dau-gio-intro-content">
+                            
+                            <div class="dau-gio-image-card">
+                                <img src="images/dầu-gió-trầm-gt1.jpg" alt="Dầu Gió Trầm 1">
+                                <div class="dau-gio-image-info">
+                                    <h3>Sản phẩm chính</h3>
+                                </div>
+                            </div>
+
+                            <div class="dau-gio-image-card">
+                                <img src="images/dầu-gió-trầm-gt2.jpg" alt="Dầu Gió Trầm 2">
+                                <div class="dau-gio-image-info">
+                                    <h3>Chi tiết sản phẩm</h3>
+                                </div>
+                            </div>
+
+                            <div class="dau-gio-image-card">
+                                <img src="images/dầu-gió-trầm-gt3.jpg" alt="Dầu Gió Trầm 3">
+                                <div class="dau-gio-image-info">
+                                    <h3>Thành phần tự nhiên</h3>
+                                </div>
+                            </div>
+
+                            <div class="dau-gio-image-card">
+                                <img src="images/dầu-gió-trầm-gt4.jpg" alt="Dầu Gió Trầm 4">
+                                <div class="dau-gio-image-info">
+                                    <h3>Chứng nhận chất lượng</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- THÔNG TIN DƯỚI ẢNH - 3 CỘT -->
+                        <div class="dau-gio-info-section">
+                            
+                            <!-- CỘT 1: GIÁ -->
+                            <div class="dau-gio-info-card">
+                                <h3>💰 Giá Sản Phẩm</h3>
+                                <div class="dau-gio-price-box">
+                                    <div class="price-label">Giá tham khảo:</div>
+                                    <div class="price-value">NT$ 500</div>
+                                    <div class="price-note">(Khoảng 400.000đ)</div>
+                                </div>
+                            </div>
+
+                            <!-- CỘT 2: THÀNH PHẦN & CÔNG DỤNG -->
+                            <div class="dau-gio-info-card">
+                                <h3>🧪 Thành Phần & Công Dụng</h3>
+                                <ul class="dau-gio-list">
+                                    <li>✅ Tinh Dầu Trắng (天然白色精油)</li>
+                                    <li>✅ Dầu Bì Tự Nhiên</li>
+                                    <li>✅ Trầm Hương Việt Nam (天然越南的沉香)</li>
+                                    <li>🔹 Giảm Căng Thẳng (減輕壓力)</li>
+                                    <li>🔹 Xoa Bóp Giảm Đau (按摩以緩解疼痛)</li>
+                                    <li>🔹 Giữ Ấm Cơ Thể (保持身體溫暖)</li>
+                                </ul>
+                            </div>
+
+                            <!-- CỘT 3: CHỨNG NHẬN -->
+                            <div class="dau-gio-info-card">
+                                <h3>🏆 Chứng Nhận</h3>
+                                <div class="dau-gio-badges">
+                                    <div class="badge-item">
+                                        <span class="badge-icon">✅</span>
+                                        <span class="badge-text">TRẦM SẠCH AN TOÀN<br>天然安全使用</span>
+                                    </div>
+                                    <div class="badge-item">
+                                        <span class="badge-icon">🇹🇼</span>
+                                        <span class="badge-text">Made in Taiwan<br>台灣天然沉香</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ========== PHẦN SẢN PHẨM ========== -->
+                <div class="dau-gio-products-section">
+                    <div class="container">
+                        <div class="tab-header">
+                            <h2>🛒 Sản Phẩm Dầu Gió Trầm Hương</h2>
+                            <p>Chọn dung tích phù hợp với nhu cầu của bạn</p>
+                        </div>
+
+                        <!-- SUB-TABS -->
+                        <div class="sub-tabs-nav">
+                            <button class="sub-tab-button active" onclick="openSubTab(event, 'dau-gio-12ml', 'dau-gio')">
+                                🌬️ Dầu Gió 12ml
+                            </button>
+                            <button class="sub-tab-button" onclick="openSubTab(event, 'dau-gio-20ml', 'dau-gio')">
+                                🌬️🌬️ Dầu Gió 20ml
+                            </button>
+                        </div>
+
+                        <!-- SUB-TAB: Dầu Gió 12ml -->
+                        <div id="dau-gio-12ml" class="sub-tab-content active">
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <img src="images/dầu-gió-trầm-gt1.jpg" alt="Dầu Gió Trầm 12ml">
+                                    <h3>Dầu Gió Trầm 12ml</h3>
+                                    <p class="price">120.000đ</p>
+                                    <p class="description">
+                                        Dầu gió trầm hương 12ml, giảm đau đầu, nhức mỏi, 
+                                        mùi hương dễ chịu, không gây cay mắt.
+                                    </p>
+                                    
+                                    <div class="product-buttons-minimal">
+                                        <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <span>Chat qua Facebook</span>
+                                        </a>
+                                        
+                                        <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-line"></i>
+                                            </div>
+                                            <span>Chat qua LINE</span>
+                                        </a>
+                                        
+                                        <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-tiktok"></i>
+                                            </div>
+                                            <span>Xem trên TikTok</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SUB-TAB: Dầu Gió 20ml -->
+                        <div id="dau-gio-20ml" class="sub-tab-content">
+                            <div class="product-grid">
+                                <div class="product-card">
+                                    <img src="images/dầu-gió-trầm-gt2.jpg" alt="Dầu Gió Trầm 20ml">
+                                    <h3>Dầu Gió Trầm 20ml</h3>
+                                    <p class="price">200.000đ</p>
+                                    <p class="description">
+                                        Dầu gió trầm hương 20ml, dung tích lớn, 
+                                        phù hợp sử dụng lâu dài.
+                                    </p>
+                                    
+                                    <div class="product-buttons-minimal">
+                                        <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="btn-minimal facebook" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <span>Chat qua Facebook</span>
+                                        </a>
+                                        
+                                        <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="btn-minimal line" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-line"></i>
+                                            </div>
+                                            <span>Chat qua LINE</span>
+                                        </a>
+                                        
+                                        <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="btn-minimal tiktok" target="_blank">
+                                            <div class="btn-minimal-icon">
+                                                <i class="fab fa-tiktok"></i>
+                                            </div>
+                                            <span>Xem trên TikTok</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 🎥 SECTION VIDEO YOUTUBE - 3 CỘT NGANG -->
+    <!-- ============================================ -->
+    <section class="video-section-youtube">
+        <div class="container">
+            
+            <!-- HEADER -->
+            <div class="video-youtube-header">
+                <h2>📹 Xem video để hiểu rõ hơn về chất lượng trầm hương của chúng tôi</h2>
+            </div>
+
+            <!-- VIDEO GRID - 3 CỘT -->
+            <div class="video-youtube-grid">
+                
+                <!-- Video 1 -->
+                <div class="video-youtube-card">
+                    <div class="video-youtube-thumbnail">
+                        <iframe 
+                            src="https://www.youtube.com/embed/pCDie9fsv_8" 
+                            title="Vòng Trầm Hương 108 Hạt" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-youtube-info">
+                        <h3>🔮 Vòng Trầm Hương 108 Hạt</h3>
+                        <p>Hướng dẫn chọn vòng trầm hương chất lượng</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-youtube-card">
+                    <div class="video-youtube-thumbnail">
+                        <iframe 
+                            src="https://www.youtube.com/embed/Du5V3Wj0r_o" 
+                            title="Cách Xông Trầm Hương" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-youtube-info">
+                        <h3>🔥 Cách Xông Trầm Hương</h3>
+                        <p>Hướng dẫn xông trầm hương đúng cách</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-youtube-card">
+                    <div class="video-youtube-thumbnail">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ucJ5O0kqy70" 
+                            title="Tinh Dầu Trầm Hương" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-youtube-info">
+                        <h3>💧 Tinh Dầu Trầm Hương</h3>
+                        <p>Công dụng và cách sử dụng tinh dầu trầm</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- NÚT XEM THÊM -->
+            <div class="video-youtube-cta">
+                <a href="https://www.youtube.com/@Tr%E1%BA%A7mH%C6%B0%C6%A1ng%C4%90%E1%BA%B7ngGiaK%E1%BB%B3" class="btn-youtube-main" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    Xem Thêm Video Trên YouTube
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Liên Hệ</h3>
+                    <p>📞 Hotline: 0965 278 125</p>
+                    <p>📧 Email: giakyd78@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Chat Ngay</h3>
+                    <a href="https://www.facebook.com/share/1DUzUXiUJX/" class="footer-link" target="_blank">
+                        📘 Facebook
+                    </a>
+                    <a href="https://line.me/ti/p/~tramhuongdanggiaky" class="footer-link" target="_blank">
+                        💬 LINE
+                    </a>
+                    <a href="https://www.tiktok.com/@danggiaanh18?_r=1&_t=ZS-92zBjSZveJm" class="footer-link" target="_blank">
+                        🎵 TikTok
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi</h3>
+                    <p>Facebook | LINE | TikTok</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trầm Hương Đặng Gia Kỳ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Hàm mở TAB chính
+        function openTab(evt, tabName) {
+            var targetTab = document.getElementById(tabName);
+            if (!targetTab) {
+                console.error("❌ Lỗi: Tab không tồn tại - " + tabName);
+                return;
+            }
+            
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            
+            targetTab.classList.add("active");
+            evt.currentTarget.classList.add("active");
+            
+            var tabsSection = document.querySelector('.tabs-section');
+            if (tabsSection) {
+                tabsSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            console.log("✅ Đã chuyển sang tab: " + tabName);
+        }
+
+        // Hàm mở SUB-TAB
+        function openSubTab(evt, subTabName, parentTab) {
+            var parentElement = document.getElementById(parentTab);
+            if (!parentElement) {
+                console.error("❌ Lỗi: Parent tab không tồn tại - " + parentTab);
+                return;
+            }
+            
+            var targetSubTab = document.getElementById(subTabName);
+            if (!targetSubTab) {
+                console.error("❌ Lỗi: Sub-tab không tồn tại - " + subTabName);
+                return;
+            }
+            
+            var subTabContents = parentElement.getElementsByClassName("sub-tab-content");
+            for (var i = 0; i < subTabContents.length; i++) {
+                subTabContents[i].classList.remove("active");
+            }
+            
+            var subTabButtons = parentElement.getElementsByClassName("sub-tab-button");
+            for (var i = 0; i < subTabButtons.length; i++) {
+                subTabButtons[i].classList.remove("active");
+            }
+            
+            targetSubTab.classList.add("active");
+            evt.currentTarget.classList.add("active");
+            
+            console.log("✅ Đã chuyển sang sub-tab: " + subTabName);
+        }
+    </script>
+
+</body>
+</html>
